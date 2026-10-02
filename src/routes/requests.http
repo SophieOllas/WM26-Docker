@@ -1,0 +1,23 @@
+@API_URL = http://localhost:8080
+
+GET {{API_URL}}/notes
+
+###
+POST {{API_URL}}/notes
+Content-Type: application/json
+
+{
+  "author_id": 2,
+  "note": "Test 3"
+}
+
+###
+PUT {{API_URL}}/notes/2
+Content-Type: application/json
+
+{
+  "note": "put funka"
+}
+
+###
+DELETE {{API_URL}}/notes/1
