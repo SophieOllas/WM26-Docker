@@ -9,9 +9,9 @@ POST {{API_URL}}/users
 Content-Type: application/json
 
 {
-  "email": "test@example.com",
+  "email": "john@doe.com",
   "password": "password123",
-  "name": "Test User"
+  "name": "John Doe"
 }
 
 
@@ -20,6 +20,6 @@ POST {{API_URL}}/users/login
 Content-Type: application/json
 
 {
-  "email": "test@example.com",
+  "email": "john@doe.com",
   "password": "password123"
 }
