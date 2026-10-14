@@ -8,18 +8,13 @@ console.log(`Node.js ${process.version}`)
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.json({ msg: "Notes API" })
+    res.json({ msg: "Users API" })
 })
 
-const notesRouter = require('./routes/notes')
-app.use('/notes', notesRouter)
-
+const usersRouter = require('./routes/users')
+app.use('/users', usersRouter)
 
 app.listen(PORT, () => {
-    try {
-        console.log(`Running on http://localhost:${PORT}`)
-    } catch (error) {
-        res.status(500).json({ message: error.message })
-    }
+    console.log(`Running on http://localhost:${PORT}`)
     
 })
